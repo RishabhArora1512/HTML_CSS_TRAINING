@@ -12,6 +12,25 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+        .header1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: lighter;
+            text-align: center;
+        }
+        
+        .header2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .header3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 10px;
+            font-weight: lighter;
+            text-align: center;
+        }
+        
         .attribution {
             font-size: 11px;
             text-align: center;
@@ -20,13 +39,101 @@
         .attribution a {
             color: hsl(228, 45%, 44%);
         }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Float four columns side by side */
+        
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+        /* Remove extra left and right margins, due to padding */
+        
+        .row {
+            margin: 0 -5px;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive columns */
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+        /* Style the counter cards */
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+            border-top-color: #92a8d1;
+        }
+        
+        .borderColour {
+            border-top-color: #92a8d1;
+        }
     </style>
 </head>
 
-<body>
+<body bgcolor="#D3D3D3">
 
-    Reliable, efficient delivery Powered by Technology Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful Supervisor Monitors activity to identify project roadblocks Team Builder Scans our
-    talent network to create the optimal team for your project Karma Regularly evaluates our talent to ensure quality Calculator Uses data from past projects to provide better delivery estimates
+    <h1 class="header1">Reliable, efficient delivery </h1>
+
+    <h1 class="header2">Powered by Technology</h1>
+    <h6 class="header3">Our Artificial Intelligence powered tools use millions of project data</h6>
+    <h6 class="header3"> points to ensure that your project is successful </h6> Supervisor Monitors activity to identify project roadblocks Team Builder Scans our talent network to create the optimal team for your project Karma Regularly evaluates our talent to ensure quality
+    Calculator Uses data from past projects to provide better delivery estimates
+
+    <div class="row">
+        <div class="column">
+            <div class="card" class="borderColour">
+                <h3 align="left" font-family: 'Poppins', sans-serif;> &nbsp; Supervisor</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h3>Card 2</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h3>Card 3</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h3>Card 4</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+            </div>
+        </div>
+    </div>
+
 
 
     <footer>
