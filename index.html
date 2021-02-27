@@ -31,6 +31,13 @@
             text-align: center;
         }
         
+        .header4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 10px;
+            font-weight: lighter;
+            text-align: left;
+        }
+        
         .attribution {
             font-size: 11px;
             text-align: center;
@@ -46,6 +53,13 @@
         
         body {
             font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topright {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 18px;
         }
         /* Float four columns side by side */
         
@@ -77,59 +91,86 @@
         }
         /* Style the counter cards */
         
-        .card {
+        .card1 {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             padding: 16px;
             text-align: center;
             background-color: #f1f1f1;
-            border-top-color: #92a8d1;
+            border-top: 5px solid hsl(180, 62%, 55%);
+        }
+        
+        .card2 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+            border-top: 5px solid hsl(0, 78%, 62%);
+        }
+        
+        .card3 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+            border-top: 5px solid hsl(34, 97%, 64%);
+        }
+        
+        .card4 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+            border-top: 5px solid hsl(212, 86%, 64%);
         }
         
         .borderColour {
-            border-top-color: #92a8d1;
+            border-top-color: #CCCCCC;
         }
     </style>
 </head>
 
-<body bgcolor="#D3D3D3">
+<body>
 
     <h1 class="header1">Reliable, efficient delivery </h1>
 
     <h1 class="header2">Powered by Technology</h1>
     <h6 class="header3">Our Artificial Intelligence powered tools use millions of project data</h6>
-    <h6 class="header3"> points to ensure that your project is successful </h6> Supervisor Monitors activity to identify project roadblocks Team Builder Scans our talent network to create the optimal team for your project Karma Regularly evaluates our talent to ensure quality
-    Calculator Uses data from past projects to provide better delivery estimates
+    <h6 class="header3"> points to ensure that your project is successful </h6>
 
     <div class="row">
         <div class="column">
-            <div class="card" class="borderColour">
+            <div class="card1" class="borderColour">
                 <h3 align="left" font-family: 'Poppins', sans-serif;> &nbsp; Supervisor</h3>
-                <p>Some text</p>
-                <p>Some text</p>
+                <p class="header4">&nbsp;&nbsp;&nbsp;&nbsp;Monitors activity to identify project </p>
+                <p class="header4">&nbsp;&nbsp;&nbsp;&nbsp;roadblocks</p>
+                <img src="C:\Users\rishabh.arora\Desktop\HTMLCSSTRAINING\HTML_CSS_TRAINING\images\icon-supervisor.svg">
             </div>
         </div>
 
         <div class="column">
-            <div class="card">
-                <h3>Card 2</h3>
-                <p>Some text</p>
-                <p>Some text</p>
+            <div class="card2" class="borderColour">
+                <h3 align="left" font-family: 'Poppins', sans-serif;> &nbsp; Team Builder</h3>
+                <p class="header4">&nbsp;&nbsp;&nbsp;&nbsp;Scans our talent network to create the </p>
+                <p class="header4">&nbsp;&nbsp;&nbsp;&nbsp;optimal team for your project</p>
+                <img src="C:\Users\rishabh.arora\Desktop\HTMLCSSTRAINING\HTML_CSS_TRAINING\images\icon-team-builder.svg">
             </div>
         </div>
 
         <div class="column">
-            <div class="card">
-                <h3>Card 3</h3>
-                <p>Some text</p>
-                <p>Some text</p>
+            <div class="card3" class="borderColour">
+                <h3 align="left" font-family: 'Poppins', sans-serif;> &nbsp; Karma</h3>
+                <p class="header4">&nbsp;&nbsp;&nbsp;&nbsp;Regularly evaluates our talent to ensure </p>
+                <p class="header4">&nbsp;&nbsp;&nbsp;&nbsp;quality</p>
+                <img src="C:\Users\rishabh.arora\Desktop\HTMLCSSTRAINING\HTML_CSS_TRAINING\images\icon-karma.svg">
             </div>
         </div>
 
         <div class="column">
-            <div class="card">
-                <h3>Card 4</h3>
-                <p>Some text</p>
-                <p>Some text</p>
+            <div class="card4" class="borderColour">
+                <h3 align="left" font-family: 'Poppins', sans-serif;> &nbsp; Calculator</h3>
+                <p class="header4">&nbsp;&nbsp;&nbsp; Uses data from past projects to provide </p>
+                <p class="header4">&nbsp;&nbsp;&nbsp;&nbsp;better delivery estimates</p>
+                <img src="C:\Users\rishabh.arora\Desktop\HTMLCSSTRAINING\HTML_CSS_TRAINING\images\icon-calculator.svg">
             </div>
         </div>
     </div>
